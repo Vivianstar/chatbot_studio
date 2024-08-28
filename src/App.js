@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./index.css";
+// import QuizDashboard from "./QuizDashboard";
+import PremiumChatGPTUI from "./PremiumChatGPTUI";
+import RAGChatbotGenerator from "./RAGChatbotGenerator";
+import RAGChatbotArtisan from "./RAGChatbotArtisan";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <PremiumChatGPTUI />;
+ // <RAGChatbotGenerator />;
+  //<RAGChatbotArtisan />;
+  // <QuizDashboard />;
 }
 
 export default App;
