@@ -7,7 +7,7 @@ import {
   ChevronDownIcon,
 } from "lucide-react";
 
-const PremiumChatGPTUI = () => {
+const PremiumChatBotUI = () => {
   const [conversations, setConversations] = useState([
     { id: 1, title: "New Conversation" },
     { id: 2, title: "Professional Bio Summary" },
@@ -102,7 +102,7 @@ const PremiumChatGPTUI = () => {
               onChange={(e) => setInputMessage(e.target.value)}
               onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
               className="flex-grow px-6 py-4 bg-transparent outline-none text-gray-100 placeholder-gray-400"
-              placeholder="Message ChatGPT..."
+              placeholder="Message ChatBot..."
             />
             <button
               onClick={handleSendMessage}
@@ -113,7 +113,7 @@ const PremiumChatGPTUI = () => {
           </div>
           <div className="text-xs text-gray-500 mt-3 text-center flex items-center justify-center">
             <ChevronDownIcon className="w-4 h-4 mr-1" />
-            ChatGPT may produce inaccurate information about people, places, or
+            ChatBot may produce inaccurate information about people, places, or
             facts.
           </div>
         </div>
@@ -122,4 +122,4 @@ const PremiumChatGPTUI = () => {
   );
 };
 
-export default PremiumChatGPTUI;
+export default PremiumChatBotUI;
